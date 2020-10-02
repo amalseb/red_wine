@@ -44,7 +44,7 @@ preprocessor = ColumnTransformer(
 )
 
 
-model = XGBRegressor(n_estimators=10000,random_state=0,learning_rate=0.001,max_depth=8)
+model = XGBRegressor(n_estimators=10000,random_state=0,learning_rate=0.001,max_depth=7)
 
 pipeline = Pipeline(steps=[('preprocessor',preprocessor),
                           ])
